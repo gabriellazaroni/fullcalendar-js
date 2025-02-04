@@ -26,7 +26,7 @@ Este projeto é uma aplicação de calendário desenvolvida em React que exibe o
 1. Clone o repositório:
 
    ```bash
-   git clone <url-do-repositorio>
+   git clone <https://github.com/gabriellazaroni/fullcalendar-js.git>
 
    ```
 
@@ -40,5 +40,5 @@ Este projeto é uma aplicação de calendário desenvolvida em React que exibe o
 3. Para rodar a apiREST json-server
 
    ```bash
-   npx json-server --watch db.json --port 3001
+   npx json-server --watch server.json --port 3001
    ```
