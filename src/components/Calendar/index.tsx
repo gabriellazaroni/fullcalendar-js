@@ -36,7 +36,7 @@ export function Calendar({
   return (
     <CalendarContainer>
       <FullCalendar
-        height={'700px'}
+        height={'auto'}
         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
         initialView='dayGridMonth'
         headerToolbar={{

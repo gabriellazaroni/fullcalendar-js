@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     overflow-x: hidden;
-    background: #fff;
+    background: #4c4362;
     font-size: 14px;
     color: #333;
     font-family: 'Inter', sans-serif;

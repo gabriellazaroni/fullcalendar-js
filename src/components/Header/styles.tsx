@@ -5,7 +5,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: center;
   padding: 33px 50px 33px 30px;
-  background-color: var(--black);
+  background-color:  #0f0d13;
   height: 94px;
   gap: 30px;
 `

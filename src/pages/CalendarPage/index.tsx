@@ -1,6 +1,5 @@
 import { z } from "zod";
 import { Calendar } from "../../components/Calendar";
-import { Header } from "../../components/Header";
 import {
   CalendarContainer,
   CalendarContainerTeste,
@@ -14,13 +13,13 @@ import { apiData } from "../../services/api";
 const EventSchema = z.object({
   title: z.string(),
   start: z.string(),
-  id: z.string()
+  Id: z.string()
 });
 
 type Event = {
   title: string;
   start: string;
-  id: string;
+  Id: string;
 };
 
 const EventsSchema = z.array(EventSchema);
@@ -35,7 +34,7 @@ export function CalendarPage() {
         const validatedEvents = EventsSchema.parse(response.data);
         const updatedEvents = validatedEvents.map(event => ({
           ...event,
-          className: event.title === 'R$ 0,00' ? 'black-title' : 'blue-title',
+          className: event.title === 'R$ 0,00' ? 'red-title' : 'green-title',
         }));
         setEvents(updatedEvents);
       } catch (error) {
@@ -47,7 +46,6 @@ export function CalendarPage() {
 
   return (
     <>
-      <Header />
       <Container>
         <MainContainer>
           <CalendarContainer>

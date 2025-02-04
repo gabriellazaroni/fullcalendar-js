@@ -5,7 +5,7 @@ export const Container = styled.div`
 `
 
 export const MainContainer = styled.main`
-  padding: 42px 60px 0 64px;
+  padding: 0px 40px 0px 0px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -13,7 +13,6 @@ export const MainContainer = styled.main`
 
 export const CalendarContainer = styled.section`
   display: flex;
-  margin-top: 40px;
 `
 
 export const DateNumberContainer = styled.div`
